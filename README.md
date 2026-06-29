@@ -3,6 +3,10 @@
 ## Description
 Task Manager is a responsive web application developed using HTML, CSS, and JavaScript. It helps users organize daily tasks by allowing them to add, complete, and delete tasks efficiently. The application also supports task priorities, due dates, and local storage to ensure tasks remain available even after refreshing the page.
 
+## 🚀 Live Demo
+
+🔗 https://bhavitha0608.github.io/Task-Manager/
+
 ## Features
 - Add new tasks
 - Mark tasks as completed
