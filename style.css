@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    width:800px;
+    max-width:100%;
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+h1{
+    color:white;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.input-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+#taskInput{
+    flex:1;
+    min-width:220px;
+}
+
+#taskDate{
+    min-width:200px;
+}
+
+#priority{
+    min-width:140px;
+}
+
+input,
+select{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    background:#334155;
+    color:white;
+    font-size:15px;
+}
+
+input::placeholder{
+    color:#cbd5e1;
+}
+
+button{
+    padding:12px 18px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+#counter{
+    color:#cbd5e1;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#334155;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.3s;
+}
+
+li:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.3);
+}
+
+.task-info{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.task-info strong{
+    font-size:18px;
+}
+
+.task-info small{
+    color:#cbd5e1;
+}
+
+.task-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.done{
+    background:#22c55e;
+}
+
+.done:hover{
+    background:#16a34a;
+}
+
+.delete{
+    background:#ef4444;
+}
+
+.delete:hover{
+    background:#dc2626;
+}
+
+.completed{
+    opacity:0.6;
+}
+
+.completed strong{
+    text-decoration:line-through;
+}
+
+@media(max-width:700px){
+
+    .container{
+        padding:20px;
+    }
+
+    .input-box{
+        flex-direction:column;
+    }
+
+    #taskInput,
+    #taskDate,
+    #priority,
+    button{
+        width:100%;
+    }
+
+    li{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .task-buttons{
+        width:100%;
+        justify-content:flex-end;
+    }
+
+}
